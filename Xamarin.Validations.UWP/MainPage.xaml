@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Xamarin.Validations.UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Xamarin.Validations.UWP"
+    xmlns:ctrl="using:Xamarin.Validations.UWP.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Center" Text="Xamarin.Validations.UWP" FontSize="24" />
+        <ctrl:ValidationTextBox HorizontalAlignment="Stretch" Text="{Binding Name.Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                ErrorMessage="{Binding Name.Errors[0]}" IsValid="{Binding Name.IsValid}" BorderBrush="Black" Margin="10" />
+        <Button HorizontalAlignment="Right" IsEnabled="{Binding IsValid}" Command="{Binding SaveCommand}">Submit</Button>
+    </StackPanel>
+</Page>

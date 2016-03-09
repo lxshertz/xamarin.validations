@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <style name="Xamarin.Validations" parent="@style/Theme.AppCompat.Light">
+  </style>
+  <!-- Input validations -->
+  <style name="error_appearance" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@color/red</item>
+    <item name="android:textSize">12sp</item>
+  </style>
+  <style name="hint_appearance" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@android:color/transparent</item>
+    <item name="android:textSize">0sp</item>
+  </style>
+</resources>

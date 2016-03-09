@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">Xamarin.Validations.Android</string>
+    <string name="Name">Enter your name</string>
+    <string name="Submit">Submit</string>
+</resources>
